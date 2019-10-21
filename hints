@@ -1,0 +1,52 @@
+-- YET ANOTHER CASE WHEN PROBLEM :D
+
+-- Return the titles and descriptions of all films, with a new column "Holiday",
+-- that contains the holiday referenced in the film, if any, otherwise is blank.
+-- all holiday's welcome :) 
+
+-- EXAMPLE: 
+-- title: "Fiction Christmas" -> 'Christmas'
+-- description: "The story of a chritmas elf who ...." --> 'Christmas'
+-- "Something About Mary" --> ""
+
+-- BONUS: return all of the holiday films first, and sort all films with their 
+-- respective holiday category in alphabetical order.
+
+-- BONUS BONUS:
+-- Our marketing team is doing a holiday promo. All holiday films 1/2.
+-- Can you return the same results, but with the price reflecting the discount?
+
+
+
+
+
+-- HINTS:
+
+--** get the title and descriptiom of all films.
+
+--** Set up the logic to check if a film is a holiday film.
+  
+--** create the CASE WHEN logic
+-- CASE
+-- WHEN (condition) THEN <output>
+-- WHEN (condition) THEN <output>
+-- ELSE <output>
+-- END as <alias>
+
+-- EXAMPLE:
+--  SELECT 
+-- 	name,
+--   	CASE 
+--      WHEN (monthlymaintenance > 100) THEN 'expensive'
+--  	ELSE 'cheap'
+--  	END AS cost <<-- this whole thing outputs a column ('cost') with output ('expensive','cheap')
+-- 						depending on the condition being met in each row
+--  FROM ...
+
+
+
+--** Do the previous query, but return all of the holiday films first, and sort all films with their 
+-- respective holiday category in alphabetical order.
+
+
+--** Apply the promo by wrapping the previous query in a CTE, then doing another CASE WHEN statement
